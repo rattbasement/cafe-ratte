@@ -2,12 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="styles/reset.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-    <title>My test page</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>cafe ratte 🐀</title>
   </head>
   <body>
-    <img src="images/firefox-icon.png" alt="My test image">
-    <script src="scripts/main.js"></script>
+    <div id="panel-container">
+      <div id="main-panel">
+        <img src="images/ratt.png" id="rat-image" alt="My test image">
+        <div id="stat-panel">
+          :3
+          <br><br>
+          Completed speedruns:
+          <span id="speedruns-amount">0</span>
+          <br><br>
+          <span class="clickable counter" id="exercises-button">></span> Completed exercises:
+          <span id="exercises-amount">0</span>
+          <br>
+          <span class="clickable counter" id="training-button">></span> Completed training:
+          <span id="training-amount">0</span>
+          <br>
+          <br>
+          <span class="clickable" id="timer-button">></span> Launch speedrun timer
+          <br>
+          <span id="timer">25:00</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
